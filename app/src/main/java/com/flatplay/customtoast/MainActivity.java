@@ -14,23 +14,15 @@ import com.flatplay.mi.flattoast.FlatToast;
 
 public class MainActivity extends AppCompatActivity {
 
+
     FlatToast flatToast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//
-//        LayoutInflater layoutInflater = getLayoutInflater();
-//        View view = layoutInflater.inflate(R.layout.coustom_toast_layout, (ViewGroup) findViewById(R.id.cus));
-//
-//        Toast toast = new Toast(getApplicationContext());
-//        toast.setDuration(Toast.LENGTH_LONG);
-//        toast.setGravity(Gravity.BOTTOM,0,0);
-//        toast.setView(view);
-//        toast.show();
 
-        flatToast.normalToast(getApplicationContext(),"hai",Toast.LENGTH_LONG);
+        FlatToast.rainbowToast(getApplicationContext(),"demo from app",1);
     }
 
 }
