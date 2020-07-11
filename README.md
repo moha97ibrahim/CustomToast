@@ -1,1 +1,1 @@
-# CustomToast
+# Flat Toast
