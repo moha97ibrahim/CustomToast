@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 //        toast.setView(view);
 //        toast.show();
 
-        flatToast.normalToast(getApplicationContext(),"hello",Toast.LENGTH_LONG);
+        flatToast.normalToast(getApplicationContext(),"hai",Toast.LENGTH_LONG);
     }
 
 }
