@@ -3,6 +3,7 @@ package com.flatplay.mi.flattoast;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class FlatToast  {
@@ -13,9 +14,11 @@ public class FlatToast  {
 
     public static void rainbowToast(Context context,String message,int duration){
 
-        Toast toast = Toast.makeText(context,message,duration);
+        Toast toast = Toast.makeText(context,"",duration);
         View toastLayout = ((LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE))
                 .inflate(R.layout.toast_layout,null);
+        TextView toastMessage = toastLayout.findViewById(R.id.text);
+        toastMessage.setText(message);
         toast.setView(toastLayout);
         toast.show();
     }
