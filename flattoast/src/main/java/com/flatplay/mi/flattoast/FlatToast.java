@@ -27,6 +27,7 @@ public class FlatToast {
         TextView toastMessage = toastLayout.findViewById(R.id.text);
         Drawable drawable;
         drawable = AppCompatResources.getDrawable(context,R.drawable.layout_frame);
+        toastLayout.setBackground(drawable);
         toastMessage.setText(message);
         toast.setView(toastLayout);
         toast.show();
