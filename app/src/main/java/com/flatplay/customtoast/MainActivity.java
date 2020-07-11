@@ -15,14 +15,12 @@ import com.flatplay.mi.flattoast.FlatToast;
 public class MainActivity extends AppCompatActivity {
 
 
-    FlatToast flatToast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        FlatToast.rainbowToast(getApplicationContext(),"hello",1);
+   //     FlatToast.info(getApplicationContext(),"hello",1);
     }
 
 }

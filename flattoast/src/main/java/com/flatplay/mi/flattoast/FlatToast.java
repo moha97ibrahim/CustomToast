@@ -13,11 +13,11 @@ public class FlatToast {
     }
 
 
-    static Toast info(Context context, String message, int duration) {
+    public static Toast info(Context context, String message, int duration) {
         return customToast(context, message, duration);
     }
 
-    private static Toast customToast(Context context, String message, int duration) {
+    public static Toast customToast(Context context, String message, int duration) {
         Toast toast = Toast.makeText(context, "", duration);
         View toastLayout = ((LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE))
                 .inflate(R.layout.toast_layout, null);
