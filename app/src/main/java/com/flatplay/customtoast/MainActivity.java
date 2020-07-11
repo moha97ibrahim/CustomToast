@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FlatToast.rainbowToast(getApplicationContext(),"demo from app",1);
+        FlatToast.rainbowToast(getApplicationContext(),"hello",1);
     }
 
 }
