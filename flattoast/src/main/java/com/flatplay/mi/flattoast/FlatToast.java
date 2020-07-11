@@ -1,10 +1,13 @@
 package com.flatplay.mi.flattoast;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.content.res.AppCompatResources;
 
 public class FlatToast {
 
@@ -22,6 +25,8 @@ public class FlatToast {
         View toastLayout = ((LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE))
                 .inflate(R.layout.toast_layout, null);
         TextView toastMessage = toastLayout.findViewById(R.id.text);
+        Drawable drawable;
+        drawable = AppCompatResources.getDrawable(context,R.drawable.layout_frame);
         toastMessage.setText(message);
         toast.setView(toastLayout);
         toast.show();

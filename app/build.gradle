@@ -28,5 +28,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 
 
-    implementation 'com.github.moha97ibrahim:CustomToast:dc845112c5'
+    implementation 'com.github.moha97ibrahim:CustomToast:f58b0a0652'
 }
