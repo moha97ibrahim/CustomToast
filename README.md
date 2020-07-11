@@ -1,4 +1,5 @@
 
+[![](https://jitpack.io/v/moha97ibrahim/CustomToast.svg)](https://jitpack.io/#moha97ibrahim/CustomToast)
 
 # Flat Toast
     Customized toast 
